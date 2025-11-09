@@ -18,10 +18,15 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 
   @include min-width(md) {
     padding: 0 2rem;
+  }
+
+  @include min-width(xl) {
+    max-width: var(--ultra-wide-width);
+    margin-inline: auto;
   }
 }
 

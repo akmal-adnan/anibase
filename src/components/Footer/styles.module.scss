@@ -4,21 +4,19 @@
   background-color: var(--bg-white);
   border-top: 1px solid var(--stroke-gentle);
   margin-top: auto;
-  padding: 2rem 1.5rem;
   transition: background 0.3s;
-
-  @include min-width(md) {
-    // padding: 3rem 0 2rem;
-  }
 }
 
 .container {
-  //   max-width: 1200px;
-  //   margin: 0 auto;
-  //   padding: 0 1rem;
+  padding: 2rem 1rem;
 
   @include min-width(md) {
-    padding: 0 2rem;
+    padding: 2rem 2rem;
+  }
+
+  @include min-width(xl) {
+    max-width: 1440px;
+    margin-inline: auto;
   }
 }
 

@@ -25,10 +25,17 @@ const Header = () => {
     return location.pathname === path;
   };
 
+  const handleLogoClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (location.pathname === '/') {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <Link to="/" onClick={closeMenu} className={styles.logoContainer}>
+        <Link to="/" onClick={handleLogoClick} className={styles.logoContainer}>
           <MainLogo dark={isDark} />
         </Link>
 

@@ -50,6 +50,11 @@
   @include min-width(md) {
     padding: 2.5rem 2rem 3.5rem 2rem;
   }
+
+  @include min-width(xl) {
+    max-width: var(--ultra-wide-width);
+    margin-inline: auto;
+  }
 }
 
 .heroInfo {
@@ -200,9 +205,14 @@
 
 .contentContainer {
   padding: 2rem 1.5rem;
-  // @include center-layout;
+
   @include min-width(md) {
     padding: 3rem 2rem;
+  }
+
+  @include min-width(xl) {
+    max-width: var(--ultra-wide-width);
+    margin-inline: auto;
   }
 }
 

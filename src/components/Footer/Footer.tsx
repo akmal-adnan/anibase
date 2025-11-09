@@ -65,13 +65,24 @@ const Footer = ({
     },
   ];
 
+  const handleLogoClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (location.pathname === '/') {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.content}>
           {showLogo && (
             <div className={styles.logoSection}>
-              <Link to="/" className={styles.logoContainer}>
+              <Link
+                to="/"
+                onClick={handleLogoClick}
+                className={styles.logoContainer}
+              >
                 <MainLogo dark={isDark} />
               </Link>
               <p className={styles.tagline}>
