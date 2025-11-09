@@ -140,17 +140,24 @@ const Details = () => {
               </section>
             )}
 
-            {anime.trailer?.embed_url && (
+            {anime.trailer && (
               <section className={styles.sectionContainer}>
                 <h3 className={styles.sectionTitle}>Trailer</h3>
                 <div className={styles.trailerContainer}>
-                  <iframe
-                    src={anime.trailer.embed_url}
-                    title="Anime Trailer"
-                    className={styles.trailer}
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+                  {anime.trailer?.embed_url ? (
+                    <iframe
+                      src={anime.trailer.embed_url}
+                      title="Anime Trailer"
+                      className={styles.trailerVid}
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  ) : (
+                    <div className={styles.trailerNotFound}>
+                      <h1>404</h1>
+                      <p>Trailer not available</p>
+                    </div>
+                  )}
                 </div>
               </section>
             )}

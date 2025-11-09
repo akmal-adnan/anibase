@@ -31,5 +31,6 @@ export declare const tagList: string;
 export declare const title: string;
 export declare const titleEnglish: string;
 export declare const titleJapanese: string;
-export declare const trailer: string;
 export declare const trailerContainer: string;
+export declare const trailerNotFound: string;
+export declare const trailerVid: string;
