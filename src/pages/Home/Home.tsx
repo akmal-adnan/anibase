@@ -117,7 +117,7 @@ const Home = () => {
 
           {isLoading ? (
             <CardListSkeleton count={24} />
-          ) : fetchedData?.data ? (
+          ) : fetchedData?.data && fetchedData.data.length > 0 ? (
             <>
               <CardList cardListData={fetchedData.data} />
 
@@ -129,7 +129,7 @@ const Home = () => {
               )}
             </>
           ) : (
-            <div className={styles.loading}>No anime found</div>
+            <div className={styles.loading}>No Anime list found</div>
           )}
         </div>
       </div>
