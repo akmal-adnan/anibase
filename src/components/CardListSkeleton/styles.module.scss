@@ -1,0 +1,16 @@
+@use '../../styles/_variables.scss' as *;
+
+.skeletonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+
+  @include min-width(md) {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+  }
+
+  @include min-width(lg) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

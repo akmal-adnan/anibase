@@ -1,0 +1,78 @@
+@use '../../styles/_variables.scss' as *;
+
+.filtersWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  @include min-width(md) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+}
+
+.filtersContainer {
+  gap: 1rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.filterLabel {
+  font-size: var(--p4-size) !important;
+  font-family: var(--body-font) !important;
+  font-weight: var(--font-medium) !important;
+  color: var(--text-sheen) !important;
+}
+
+.filterSelect {
+  font-size: var(--p3-size) !important;
+  font-family: var(--body-font) !important;
+  background-color: var(--bg-white) !important;
+  border-radius: 8px !important;
+  color: var(--text-bold) !important;
+
+  :global(.MuiOutlinedInput-notchedOutline) {
+    border-color: var(--stroke-sheen) !important;
+    border-width: 1px !important;
+  }
+
+  &:hover :global(.MuiOutlinedInput-notchedOutline) {
+    border-color: var(--stroke-primary-pale) !important;
+    border-width: 1.5px !important;
+  }
+}
+
+.resetButton {
+  margin-top: 0.25rem;
+  font-family: var(--body-font) !important;
+  font-size: var(--p4-size) !important;
+  font-weight: var(--font-medium) !important;
+  color: var(--text-sheen) !important;
+  border-color: var(--stroke-sheen) !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  text-transform: none !important;
+  min-width: auto !important;
+  transition: all 0.2s ease !important;
+
+  &:hover {
+    border-color: var(--stroke-primary-pale) !important;
+    background-color: var(--bg-primary-pale) !important;
+    color: var(--text-primary-normal) !important;
+  }
+
+  :global(svg) {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  @include min-width(sm) {
+    align-self: flex-start;
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+}

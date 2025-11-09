@@ -1,0 +1,93 @@
+@use '../../styles/_variables.scss' as *;
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.pagination {
+  font-family: var(--body-font) !important;
+
+  :global(.MuiPagination-ul) {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  :global(.MuiPaginationItem-root) {
+    color: var(--text-bold) !important;
+    font-size: var(--p3-size) !important;
+    font-family: var(--body-font) !important;
+    font-weight: var(--font-medium) !important;
+    border-radius: 8px !important;
+    min-width: 40px !important;
+    height: 40px !important;
+    margin: 0 4px !important;
+    border: 1px solid transparent !important;
+    transition: all 0.2s ease !important;
+
+    &:global(.Mui-selected) {
+      background-color: var(--primary-500) !important;
+      color: var(--text-white-constant) !important;
+      border-color: var(--primary-500) !important;
+      font-weight: var(--font-semi-bold) !important;
+
+      &:hover {
+        background-color: var(--primary-700) !important;
+        border-color: var(--primary-700) !important;
+      }
+
+      &:focus {
+        background-color: var(--primary-700) !important;
+        border-color: var(--primary-700) !important;
+      }
+    }
+
+    &:hover:not(:global(.Mui-selected)):not(:global(.Mui-disabled)) {
+      background-color: var(--bg-primary-pale) !important;
+      color: var(--text-primary-normal) !important;
+      border-color: var(--stroke-primary-pale) !important;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--stroke-primary-pale) !important;
+    }
+  }
+
+  :global(.MuiPaginationItem-ellipsis) {
+    color: var(--text-gentle) !important;
+    font-family: var(--body-font) !important;
+  }
+
+  :global(.MuiPaginationItem-icon) {
+    font-size: 1.5rem !important;
+    color: var(--text-bold) !important;
+  }
+
+  :global(.Mui-disabled) {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+
+    :global(.MuiPaginationItem-icon) {
+      color: var(--text-gentle) !important;
+    }
+  }
+
+  :global(.MuiPaginationItem-firstLast) {
+    &:hover:not(:global(.Mui-disabled)) {
+      background-color: var(--bg-primary-pale) !important;
+      color: var(--text-primary-normal) !important;
+    }
+  }
+
+  :global(.MuiPaginationItem-previousNext) {
+    &:hover:not(:global(.Mui-disabled)) {
+      background-color: var(--bg-primary-pale) !important;
+      color: var(--text-primary-normal) !important;
+    }
+  }
+}

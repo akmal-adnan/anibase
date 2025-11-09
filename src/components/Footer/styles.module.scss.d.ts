@@ -1,0 +1,16 @@
+export declare const bottom: string;
+export declare const container: string;
+export declare const content: string;
+export declare const copyright: string;
+export declare const externalLink: string;
+export declare const footer: string;
+export declare const logoContainer: string;
+export declare const logoSection: string;
+export declare const nav: string;
+export declare const navLink: string;
+export declare const poweredBy: string;
+export declare const socialButton: string;
+export declare const socialButtons: string;
+export declare const socialSection: string;
+export declare const socialTitle: string;
+export declare const tagline: string;

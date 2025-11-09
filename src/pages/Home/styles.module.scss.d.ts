@@ -1,0 +1,12 @@
+export declare const animeCard: string;
+export declare const animeGrid: string;
+export declare const animeImage: string;
+export declare const animeListSection: string;
+export declare const animeTitle: string;
+export declare const content: string;
+export declare const filtersSection: string;
+export declare const loading: string;
+export declare const mainContainer: string;
+export declare const searchSection: string;
+export declare const sectionTitle: string;
+export declare const titleGroup: string;
