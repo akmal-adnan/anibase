@@ -76,14 +76,14 @@ A modern, responsive web application for searching and discovering anime. Built 
 
 ## 🎁 Bonus Implementation
 
-- [x] Creative UI with unique "wow" factor
-- [x] Skeleton loaders or meaningful loading states
-- [x] Empty state and no results handling with helpful messaging
-- [x] Mobile responsiveness
-- [x] Additional features that enhance the project
+- [x] Beautiful UI, clean and minimalist ui with dark mode
+- [x] Skeleton loader and loading states
+- [x] Handle Empty state and no results handling with helpful messaging
+- [x] Mobile responsiveness with mobile-first design approach
+- [x] Additional features for filtering search results
 - [x] Proper error handling (network failures, rate limiting, invalid API responses)
-- [x] Race condition handling
-- [x] Unit or integration tests
+- [x] Race condition handling - debounce hooks for calling the search api
+- [x] Have unit and integration tests for some important components
 
 ## 📁 Project Structure
 
