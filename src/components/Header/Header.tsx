@@ -80,6 +80,7 @@ const Header = () => {
               <CloseCircle size="28" />
             </button>
           </div>
+
           <nav className={styles.mobileNav}>
             {navLinks.map((item) => (
               <Link
