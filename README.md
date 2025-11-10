@@ -3,6 +3,7 @@
 A modern, responsive web application for searching and discovering anime. Built with React, TypeScript, and powered by the Jikan API, this application provides a seamless experience for anime enthusiasts to explore their favorite shows and discover new ones.
 
 ## Live Demo
+
 https://anibaseio.netlify.app
 
 ## 🌟 Features
@@ -91,7 +92,7 @@ https://anibaseio.netlify.app
 ## 📁 Project Structure
 
 ```
-anime-search/
+anibase/
 ├── public/                 # Static assets
 ├── src/
 │   ├── assets/            # Images, icons, and SVG components
@@ -135,7 +136,7 @@ anime-search/
 
 ```bash
 git clone <repository-url>
-cd anime-search
+cd anibase
 ```
 
 2. Install dependencies:
