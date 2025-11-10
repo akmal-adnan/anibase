@@ -31,8 +31,14 @@
 }
 
 .logoContainer {
-  width: 200px;
+  display: flex;
+  align-items: center;
+  width: 150px;
   height: auto;
+
+  @include min-width(sm) {
+    width: 170px;
+  }
 }
 
 .nav {

@@ -1,9 +1,14 @@
+@use './styles/variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 5rem;
+  --header-height: 3.8rem;
   --ultra-wide-width: 1440px;
+
+  @include min-width(sm) {
+    --header-height: 4.2rem;
+  }
 
   /*========== Colors Token ==========*/
   --neutral-black-1: #ffffff;

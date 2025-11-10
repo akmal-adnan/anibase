@@ -48,10 +48,8 @@ const Header = () => {
             {isDark ? <Sun1 size="24" /> : <Moon size="24" />}
           </button>
 
-          <button className={styles.shareButton}>
-            {/* <Send2 size="24" /> */}
-            Share
-          </button>
+          {/* Dummy share button */}
+          <button className={styles.shareButton}>Share</button>
         </div>
 
         <button

@@ -90,9 +90,12 @@
 }
 
 .logoContainer {
-  width: 200px;
+  width: 170px;
   height: auto;
-  display: inline-block;
+
+  @include min-width(sm) {
+    width: 200px;
+  }
 }
 
 .tagline {
